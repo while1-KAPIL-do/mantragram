@@ -32,8 +32,6 @@ $userID = $_SESSION['username'];
 </head>
 <body>
 
-
-
     <div>
         <div class="nav">
             <div class=nav-div1>
@@ -72,7 +70,7 @@ $userID = $_SESSION['username'];
                                         <div class="card-time">6 nov 2020</div>
 
                                         <div class="card-footer">
-                                            <img id="btn_like" src="icons/unlike.png" width="25px">
+                                            <img id="btn_like" onclick="like_btn_clicked('<?php echo $userID; ?>')" src="icons/unlike.png" width="25px">
                                             <img id="btn_comment" src="icons/msg.png" width="25px">
                                             <img id="btn_share" src="icons/share.png" width="25px">
                                         </div>
@@ -211,9 +209,6 @@ $(document).ready(function(){
         });
     }
 
-    
-});
-</script>
     <script src="script/kk.js"></script>
 </body>
 </html>
