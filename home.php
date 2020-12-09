@@ -209,6 +209,8 @@ $(document).ready(function(){
         });
     }
 
+        });
+    </script>
     <script src="script/kk.js"></script>
 </body>
 </html>
